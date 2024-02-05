@@ -4,8 +4,12 @@ The weather analysis of over 500 cities around the globe showed the relationship
 
 While the analysis was set to randomly pick cities throughout the entire globe, the actual results were skewed towards the northern hemisphere. This could be largely due to the population density of the southern hemisphere vs the northern hemisphere. Few cities exist between latitude -50 to -90 (including only Antartica and the tip of South America), whereas latitude 50 to 90 includes all of Canada, Russia, some of Europe, and more. Looking at the information behind the citypy package which was used to randomly choose the cities (https://github.com/wingchen/citipy/blob/master/README.md), the nearest city is chosen to a set of coordinates randomly given. Even if a random latitude on the southern hemisphere was given (i.e. -70), the closest city might be quite far away in a more positive latitude. Therefore with more data points, the examined relationships are stronger in the northern hemisphere than in the southern hemisphere.
 
-
 Sources Used: 
 for creating scatter plots: https://www.w3schools.com/python/matplotlib_grid.asp
 for annotating linear regression plots: 
 https://www.geeksforgeeks.org/matplotlib-pyplot-annotate-in-python/
+
+VacationPy Analysis:
+The GeoApiFy API was used to find nearby hotels to cities from the previous WeatherPy activity. The full city dataframe was filtered to find cities that were warm, but not too hot, with low to medium humidity, low windspeed, and not too much cloud cover to find a good vacation spot for spending time outdoors.
+
+Sources: https://docs.bokeh.org/en/latest/docs/user_guide/styling/visuals.html
